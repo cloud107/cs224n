@@ -4,3 +4,15 @@
 # （GitHub 单文件上限 100MB，这些文件远超）
 a1/student/glove/
 a3/student/model_small.bin*
+
+# Python 虚拟环境：每台机器路径不同（软链目标只在建它的机器上有效），不入版本控制
+# 不带斜杠，这样目录和符号链接都能匹配上
+.venv
+venv
+
+# Python 构建产物
+__pycache__/
+*.py[cod]
+
+# 训练输出（tensorboard 日志等），可重新生成
+expt/
