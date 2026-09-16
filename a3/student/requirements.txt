@@ -1,0 +1,11 @@
+numpy
+scipy
+tqdm
+docopt
+nltk
+torchvision
+torch
+sentencepiece
+lxml>=5.1.0  # was ==5.0.0: no arm64 wheel, fails to build on Apple Silicon
+sacrebleu
+tensorboard

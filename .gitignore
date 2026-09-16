@@ -1,0 +1,6 @@
+.DS_Store
+
+# 大文件 / 可重新下载或重新生成的数据，不纳入版本控制
+# （GitHub 单文件上限 100MB，这些文件远超）
+a1/student/glove/
+a3/student/model_small.bin*
