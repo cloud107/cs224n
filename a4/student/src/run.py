@@ -67,13 +67,14 @@ if args.variant == 'vanilla':
     # TODO: [part c] Make some model here
     ### YOUR CODE HERE ###
     model = models.GPT(mconf).to(device)
-    pass
+    
     ### END YOUR CODE ###
 elif args.variant == 'rope':
     # TODO: [part g] Make some other model here
     # set mconf.rope parameter
     ### YOUR CODE HERE ###
-    pass
+    mconf.rope = True
+    model = models.GPT(mconf).to(device)
     ### END YOUR CODE ###
 else:
     raise ValueError("Unknown model variant")
